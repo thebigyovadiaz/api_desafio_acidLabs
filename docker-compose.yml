@@ -5,10 +5,13 @@ services:
     container_name: myapp
     restart: always
     build: .
-    ports:
-      - '4301:4301'
+    # ports:
+    #   - '4301:4301'
     volumes:
       - ./myapp:/opt/myapp
+    environment:
+      - NODE_ENV=production
+      - REDISCLOUD_URL=redis://rediscloud:omZlsfXvSumuVJI8CvM9dGfW4iBsVG9U@redis-10442.c10.us-east-1-4.ec2.cloud.redislabs.com:10442
     links:
       - redis
   redis:
