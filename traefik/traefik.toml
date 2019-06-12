@@ -1,0 +1,10 @@
+defaultEntryPoints = ["http"]
+
+[entryPoints]
+  [entryPoints.http]
+  address = ":8080"
+  
+[backends]
+  [backends.backend]
+    [backends.backend1.servers.server1]
+    url = "http://desafio-acidlabs:3000/api"

@@ -1,0 +1,37 @@
+{
+  "name": "api_desafio_acidlabs",
+  "version": "1.0.0",
+  "description": "API desarrollada en Node.js - Express para conectar con servicio externo de clima",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thebigyovadiaz/api_desafio_acidLabs.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "API",
+    "Clima"
+  ],
+  "author": "Yovanny Diaz <thebigyovadiaz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thebigyovadiaz/api_desafio_acidLabs/issues"
+  },
+  "homepage": "https://github.com/thebigyovadiaz/api_desafio_acidLabs#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
