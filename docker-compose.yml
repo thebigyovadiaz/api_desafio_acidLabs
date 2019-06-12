@@ -6,8 +6,9 @@ services:
     restart: always
     build: .
     ports:
-      - '4300:4300'
       - '4301:4301'
+    volumes:
+      - ./myapp:/opt/myapp
     links:
       - redis
   redis:
