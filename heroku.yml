@@ -4,7 +4,7 @@ setup:
       as: Redis-Cache
 build:
   docker:
-    web: Dockerfile
+    web: Dockerfile.web
   config:
     NODE_ENV: development
 run:
